@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập số điện thoại</title>
+</head>
+<body onload="checkNumber()">
+<script>
+    function checkNumber()
+    {
+        let num = +prompt("Enter a number :");
+        let total = num;
+        while (num != -1)
+        {
+            num = +prompt("Enter a number :");
+            alert(num);
+            total += num;
+        }
+        alert(total);
+    }
+</script>
+</body>
+</html>
